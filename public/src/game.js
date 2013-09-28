@@ -1,6 +1,6 @@
 ;(function(THRUSTER) {
     // Game Loop
-    var FPS = 30;
+    var FPS = 10;
     setInterval(function() {
         update();
         draw();
