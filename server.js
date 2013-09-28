@@ -9,6 +9,7 @@ var User = mongoose.model('User', {
 
 var app = express();
 
+app.use(express.static(__dirname + '/public'));
 
 
 
