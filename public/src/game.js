@@ -6,9 +6,6 @@
         draw();
     }, 1000/FPS);
 
-    var textX = 50;
-    var textY = 0;
-
     function update() {
         THRUSTER.Entities.player.y += 1;
     };
