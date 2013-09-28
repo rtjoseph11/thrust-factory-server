@@ -1,0 +1,23 @@
+
+
+***** SERVER RESTARTED *****
+
+
+Fri Sep 27 20:36:02.655 [initandlisten] MongoDB starting : pid=25212 port=27099 dbpath=/Users/rtjoseph/projects/thrust-factory-server/db 64-bit host=Richards-MacBook-Air-2.local
+Fri Sep 27 20:36:02.655 [initandlisten] 
+Fri Sep 27 20:36:02.655 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Fri Sep 27 20:36:02.655 [initandlisten] db version v2.4.5
+Fri Sep 27 20:36:02.655 [initandlisten] git version: a2ddc68ba7c9cee17bfe69ed840383ec3506602b
+Fri Sep 27 20:36:02.655 [initandlisten] build info: Darwin bs-osx-106-x86-64-2.10gen.cc 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:32:41 PDT 2011; root:xnu-1504.15.3~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Fri Sep 27 20:36:02.655 [initandlisten] allocator: system
+Fri Sep 27 20:36:02.655 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/rtjoseph/projects/thrust-factory-server/db", fork: true, logappend: "true", logpath: "/Users/rtjoseph/projects/thrust-factory-server/db/logfile", port: 27099 }
+Fri Sep 27 20:36:02.656 [initandlisten] journal dir=/Users/rtjoseph/projects/thrust-factory-server/db/journal
+Fri Sep 27 20:36:02.656 [initandlisten] recover : no journal files present, no recovery needed
+Fri Sep 27 20:36:02.671 [FileAllocator] allocating new datafile /Users/rtjoseph/projects/thrust-factory-server/db/local.ns, filling with zeroes...
+Fri Sep 27 20:36:02.671 [FileAllocator] creating directory /Users/rtjoseph/projects/thrust-factory-server/db/_tmp
+Fri Sep 27 20:36:02.715 [FileAllocator] done allocating datafile /Users/rtjoseph/projects/thrust-factory-server/db/local.ns, size: 16MB,  took 0.044 secs
+Fri Sep 27 20:36:02.718 [FileAllocator] allocating new datafile /Users/rtjoseph/projects/thrust-factory-server/db/local.0, filling with zeroes...
+Fri Sep 27 20:36:02.826 [FileAllocator] done allocating datafile /Users/rtjoseph/projects/thrust-factory-server/db/local.0, size: 64MB,  took 0.107 secs
+Fri Sep 27 20:36:02.847 [initandlisten] command local.$cmd command: { create: "startup_log", size: 10485760, capped: true } ntoreturn:1 keyUpdates:0  reslen:37 175ms
+Fri Sep 27 20:36:02.847 [websvr] admin web console waiting for connections on port 28099
+Fri Sep 27 20:36:02.847 [initandlisten] waiting for connections on port 27099
