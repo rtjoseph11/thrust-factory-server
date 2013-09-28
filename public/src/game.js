@@ -18,13 +18,17 @@
         draw();
     }, 1000/FPS);
 
-    function update() {
+    var textX = 50;
+    var textY = 50;
 
+    function update() {
+        textX += 1;
+        textY += 1;
     };
 
     function draw() {
         ctx.fillStyle = 'red';
-        ctx.fillText('Sup Bro!', 50, 50);
+        ctx.fillText('Sup Bro!', textX, textY);
     };
 
 })();
