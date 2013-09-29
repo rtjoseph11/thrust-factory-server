@@ -1,5 +1,5 @@
 ;(function(THRUSTER) {
-    THRUSTER.imageFolder = '/public/images/';
+    THRUSTER.imageFolder = 'images/';
     THRUSTER.imageFiles = ['LeftWingGold.png'];
     THRUSTER.imageObjects = {};
     THRUSTER.loadImage = function(src, name) {
