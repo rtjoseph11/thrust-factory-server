@@ -15,5 +15,4 @@
             }
         }
     };
-    THRUSTER.Entities.fallingPiece.init();
 })(THRUSTER);

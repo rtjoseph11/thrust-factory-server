@@ -2,13 +2,23 @@
     THRUSTER.imageFolder = '/public/images/';
     THRUSTER.imageFiles = ['LeftWingGold.png'];
     THRUSTER.imageObjects = {};
-    var img;
-    for (var i = 0; i < THRUSTER.imageFiles.length; i++) {
-        img = new Image();
-        img.name = THRUSTER.imageFiles[i];
+    THRUSTER.loadImage = function(src, name) {
+        var deferred = $.Deferred();
+        var img = new Image();
         img.onload = function() {
+            deferred.resolve();
         };
-        img.src = THRUSTER.imageFolder + img.name;
-        THRUSTER.imageObjects[img.name] = img;
-    }
+        img.src = src;
+        console.log("name: ", name)
+        THRUSTER.imageObjects[name] = img;
+        return deferred.promise();
+    };
+    var loaders = [];
+    for (var i = 0; i < THRUSTER.imageFiles.length; i++) {
+        loaders.push(THRUSTER.loadImage(THRUSTER.imageFolder + THRUSTER.imageFiles[i], THRUSTER.imageFiles[i]));
+    };
+    $.when.apply($, loaders).done(function() {
+       THRUSTER.Game.init();
+       THRUSTER.Game.gameLoop();
+    });
 })(THRUSTER);
