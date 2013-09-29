@@ -8,7 +8,6 @@
                 this.plane = new Image();
                 this.plane.src = '/public/images/LeftWingGold.png';
                 this.x = THRUSTER.Helpers.getRandomInt(0, THRUSTER.Config.CANVAS_WIDTH - this.plane.width);
-                console.log('offset: ', THRUSTER.Config.CANVAS_WIDTH - this.plane.width)
             },
             draw: function() {
                 if (this.plane.complete) {
