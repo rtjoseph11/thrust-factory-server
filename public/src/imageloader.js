@@ -9,7 +9,6 @@
             deferred.resolve();
         };
         img.src = src;
-        console.log("name: ", name)
         THRUSTER.imageObjects[name] = img;
         return deferred.promise();
     };
