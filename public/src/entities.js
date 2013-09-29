@@ -1,6 +1,6 @@
 ;(function(THRUSTER) {
     THRUSTER.Entities = {
-        player: {
+        fallingPiece: {
             color: "blue",
             y: 0,
             x: 0,
@@ -17,5 +17,5 @@
             }
         }
     };
-    THRUSTER.Entities.player.init();
+    THRUSTER.Entities.fallingPiece.init();
 })(THRUSTER);
